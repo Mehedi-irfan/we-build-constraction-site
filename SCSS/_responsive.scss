@@ -1,4 +1,7 @@
 @media only screen and (min-width: 800px) and (max-width: 1100px) {
+  section {
+    padding: 2rem 2.5rem;
+  }
   // Main Header section
   #Main_header {
     padding: 1.2rem 1.2rem;
@@ -12,9 +15,24 @@
       width: 30rem;
     }
   }
+  // home section
+  .home {
+    .slider {
+      justify-content: center;
+      .content {
+        text-align: center;
+        h3 {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
 }
 
 @media only screen and (min-width: 200px) and (max-width: 799px) {
+  section {
+    padding: 1.5rem 2rem;
+  }
   // Main Header section
   #Main_header {
     padding: 1rem 2rem;
@@ -52,7 +70,7 @@
       width: 20rem;
     }
     .login-form {
-      width: 25rem;
+      width: 22rem;
       padding: 1rem;
       h3 {
         @include titleText(1.5rem);
@@ -72,6 +90,18 @@
       }
       p {
         @include smallTxt(1rem);
+      }
+    }
+  }
+  // home section
+  .home {
+    .slider {
+      justify-content: center;
+      .content {
+        text-align: center;
+        h3 {
+          font-size: 1.8rem;
+        }
       }
     }
   }

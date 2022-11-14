@@ -36,3 +36,13 @@ window.onscroll = () => {
   loginForm.classList.remove("active");
   contactInfo.classList.remove("active");
 };
+
+// swiper js slider script
+var swiper = new Swiper(".home-slider", {
+  loop: true,
+  grabCursor: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});

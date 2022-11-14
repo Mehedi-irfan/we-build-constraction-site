@@ -1,0 +1,54 @@
+.home {
+  padding: 0;
+  .slider {
+    min-height: 35rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-size: cover !important;
+    background-position: center !important;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: linear-gradient(70deg, $white_color, transparent);
+    }
+    .content {
+      width: 40rem;
+      position: relative;
+      h3 {
+        @include titleText(4rem);
+        text-transform: uppercase;
+      }
+      p {
+        @include smallTxt(1.1rem);
+        padding: 0.6rem 0;
+      }
+    }
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    top: initial;
+    left: initial;
+    right: 0;
+    bottom: 0;
+    height: 3rem;
+    width: 3rem;
+    line-height: 3rem;
+    background-color: $white_color;
+    &:hover {
+      background-color: $yellow_color;
+    }
+  }
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    font-size: 1.2rem;
+    color: $black_color;
+  }
+  .swiper-button-prev {
+    right: 3rem;
+  }
+}

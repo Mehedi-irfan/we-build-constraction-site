@@ -9,6 +9,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 9999;
   .logo {
     @include titleText(1.5rem);
     // flex-basis: 20%;
@@ -95,6 +96,7 @@
     animation: fadeIn 0.2s linear;
     text-align: center;
     display: none;
+
     &.active {
       display: block;
     }
@@ -163,6 +165,7 @@
   text-align: center;
   width: 20rem;
   padding-top: 3rem;
+  z-index: 99999;
   &.active {
     display: block;
     box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.7);
