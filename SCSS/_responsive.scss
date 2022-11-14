@@ -27,6 +27,7 @@
       }
     }
   }
+  // about section
   .about {
     .row {
       flex-direction: column;
@@ -44,6 +45,12 @@
   // Main Header section
   #Main_header {
     padding: 1rem 2rem;
+    .logo {
+      @include titleText(1.2rem);
+    }
+    .icons div {
+      font-size: 1rem;
+    }
     .navbar {
       position: absolute;
       top: 70px;
@@ -113,6 +120,7 @@
       }
     }
   }
+  // about section
   .about {
     .row {
       flex-direction: column;

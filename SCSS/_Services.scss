@@ -1,0 +1,28 @@
+.services {
+  background-color: $light_bg;
+  .box_container {
+    @include grid(16rem);
+    .box {
+      background-color: $white_color;
+      box-shadow: $box_shadow;
+      border: $border;
+      text-align: center;
+      padding: 3rem 1rem;
+      transition: $transition;
+      &:hover img {
+        transform: translateY(-0.5rem);
+      }
+      img {
+        width: 3rem;
+        transition: $transition;
+      }
+      h3 {
+        @include titleText(1.2rem);
+        padding: 0.4rem 0 0.2rem 0;
+      }
+      p {
+        @include smallTxt(0.9rem);
+      }
+    }
+  }
+}

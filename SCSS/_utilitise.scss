@@ -56,7 +56,7 @@ html {
 @mixin grid($val) {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax($val, 1fr));
-  gap: 2rem;
+  gap: 1.2rem;
 }
 
 @mixin titleText($titleSize) {
