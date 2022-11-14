@@ -1,0 +1,78 @@
+@media only screen and (min-width: 800px) and (max-width: 1100px) {
+  // Main Header section
+  #Main_header {
+    padding: 1.2rem 1.2rem;
+    .navbar a {
+      font-size: 0.9rem;
+    }
+    .search-form {
+      width: 50rem;
+    }
+    .login-form {
+      width: 30rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 200px) and (max-width: 799px) {
+  // Main Header section
+  #Main_header {
+    padding: 1rem 2rem;
+    .navbar {
+      position: absolute;
+      top: 70px;
+      left: 0;
+      right: 0;
+      background-color: $white_color;
+      border-top: $border;
+      border-bottom: $border;
+      clip-path: polygon(0 0, 100% 0%, 100% 0, 0 0);
+      transition: $transition;
+      &.active {
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
+      }
+      a {
+        display: block;
+        text-align: left;
+        margin: 0.6rem;
+        padding: 0.6rem;
+        &:hover {
+          background-color: $yellow_color;
+          color: $black_color;
+        }
+      }
+    }
+
+    .icons {
+      #menu_btn {
+        display: inline-block;
+      }
+    }
+    .search-form {
+      width: 20rem;
+    }
+    .login-form {
+      width: 25rem;
+      padding: 1rem;
+      h3 {
+        @include titleText(1.5rem);
+      }
+      .box {
+        padding: 0.8rem 0.9rem;
+      }
+      .flex {
+        label,
+        a {
+          font-size: 0.9rem;
+        }
+      }
+      .btn {
+        padding: 0.8rem 0;
+        font-size: 1rem;
+      }
+      p {
+        @include smallTxt(1rem);
+      }
+    }
+  }
+}

@@ -1,0 +1,102 @@
+$yellow_color: #f5bf23;
+$black_color: #111;
+$white_color: #fff;
+$light_color: #666;
+$light_bg: #eee;
+$box_shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+$border: 0.1rem solid rgba(0, 0, 0, 0.3);
+$transition: all 0.3s linear;
+
+// font weight
+$font-WSM: 400;
+$font-WMD: 600;
+$font-WXL: 700;
+$font-W2XL: 800;
+
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 7rem;
+
+  &::-webkit-scrollbar {
+    width: 1rem;
+  }
+  &::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: $yellow_color;
+  }
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 0.6rem;
+  background-color: $black_color;
+  color: $white_color;
+  padding: 1rem 3rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font : {
+    size: 1.3rem;
+    weight: $font-WMD;
+  }
+  text-transform: capitalize;
+  letter-spacing: 1.4px;
+  transition: $transition;
+  &:focus {
+    border: none;
+  }
+  &:hover {
+    background-color: $yellow_color;
+    color: $black_color;
+  }
+}
+
+@mixin grid($val) {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax($val, 1fr));
+  gap: 2rem;
+}
+
+@mixin titleText($titleSize) {
+  font: {
+    size: $titleSize;
+    weight: $font-WXL;
+  }
+  color: $black_color;
+  text-transform: capitalize;
+}
+
+@mixin smallTxt($smallSize) {
+  font : {
+    size: $smallSize;
+    weight: $font-WSM;
+  }
+  color: $light_color;
+  line-height: 1.5;
+}
+
+@mixin iconBox() {
+  height: 2.5rem;
+  width: 2.5rem;
+  line-height: 2.5rem;
+  font-size: 1rem;
+  color: $black_color;
+  background-color: $light_bg;
+  transition: all 0.3s linear;
+  cursor: pointer;
+  text-align: center;
+
+  &:hover {
+    background-color: $black_color;
+    color: $white_color;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    top: 50%;
+    opacity: 0;
+  }
+}

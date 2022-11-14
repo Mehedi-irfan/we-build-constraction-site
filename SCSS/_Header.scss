@@ -1,0 +1,204 @@
+#Main_header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: $white_color;
+  box-shadow: $box_shadow;
+  padding: 1rem 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .logo {
+    @include titleText(1.5rem);
+    // flex-basis: 20%;
+    span {
+      color: $yellow_color;
+    }
+  }
+  .navbar {
+    // flex-basis: 60%;
+    text-align: center;
+    a {
+      @include titleText(1.1rem);
+      font-weight: 500;
+      margin: 0 0.6rem;
+      transition: $transition;
+      &:hover {
+        color: $yellow_color;
+      }
+    }
+  }
+  .icons {
+    // flex-basis: 20%;
+    text-align: right;
+    div {
+      @include iconBox();
+    }
+    #menu_btn {
+      display: none;
+    }
+  }
+
+  // search form
+  .search-form {
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50rem;
+    background-color: $white_color;
+    box-shadow: $box_shadow;
+    padding: 0.7rem;
+    display: none;
+    align-items: center;
+    gap: 0.6rem;
+    border-radius: 5px;
+    animation: fadeIn 0.2s linear;
+    &.active {
+      display: flex;
+    }
+    input {
+      width: 100%;
+      padding: 0.6rem 0.9rem;
+      background-color: $light_bg;
+      border: none;
+      font : {
+        size: 1rem;
+        weight: $font-WSM;
+      }
+      letter-spacing: 1.1px;
+      color: $light_color;
+    }
+    label {
+      font-size: 1.3rem;
+      color: $black_color;
+      margin: 0 0.3rem;
+      transform: $transition;
+      &:hover {
+        color: $yellow_color;
+      }
+    }
+  }
+
+  // login form
+  .login-form {
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40rem;
+    background-color: $white_color;
+    box-shadow: $box_shadow;
+    padding: 1.5rem;
+    border-radius: 5px;
+    animation: fadeIn 0.2s linear;
+    text-align: center;
+    display: none;
+    &.active {
+      display: block;
+    }
+    span {
+      color: $yellow_color;
+    }
+    h3 {
+      @include titleText(2.5rem);
+      text-transform: uppercase;
+      padding-bottom: 1.5rem;
+      padding-top: 1.5rem;
+    }
+    .box {
+      width: 100%;
+      padding: 1rem 1.1rem;
+      background-color: $light_bg;
+      border: none;
+      margin-bottom: 0.9rem;
+      font-size: 1rem;
+      letter-spacing: 1.2px;
+      color: $light_color;
+    }
+    .flex {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.4rem 0 1.3rem 0;
+      label {
+        font-size: 1.2rem;
+        color: $light_color;
+      }
+      a {
+        font-size: 1.2rem;
+        color: $light_color;
+        margin-left: auto;
+        &:hover {
+          color: $yellow_color;
+          text-decoration: underline;
+        }
+      }
+    }
+    .btn {
+      width: 100%;
+    }
+    p {
+      @include smallTxt(1.3rem);
+      padding: 1rem 0;
+      transition: $transition;
+      a {
+        color: $yellow_color;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+.contact-info {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: $white_color;
+  display: none;
+  height: 100%;
+  padding: 0 1.5rem;
+  text-align: center;
+  width: 20rem;
+  padding-top: 3rem;
+  &.active {
+    display: block;
+    box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.7);
+  }
+  #contact-close-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    font-size: 1.8rem;
+    cursor: pointer;
+    transition: $transition;
+    &:hover {
+      transform: rotate(90deg);
+      color: $yellow_color;
+    }
+  }
+  .info {
+    padding: 1.3rem 0;
+    i {
+      @include iconBox();
+      margin-bottom: 0.5rem;
+    }
+    h3 {
+      @include titleText(1.3rem);
+      padding: 0.3rem 0;
+    }
+    p {
+      @include smallTxt(1rem);
+    }
+  }
+  .shear {
+    padding-top: 1.5rem;
+    border-top: $border;
+    a {
+      @include iconBox();
+      margin: 0 0.2rem;
+    }
+  }
+}
