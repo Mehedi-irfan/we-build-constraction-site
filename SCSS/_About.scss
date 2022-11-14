@@ -1,0 +1,47 @@
+.about {
+  .row {
+    display: flex;
+    align-items: center;
+    gap: 1.3rem;
+    .video {
+      flex-basis: 40%;
+      video {
+        width: 100%;
+      }
+    }
+    .content {
+      flex-basis: 60%;
+      h3 {
+        @include titleText(2.5rem);
+      }
+      p {
+        @include smallTxt(1.1rem);
+        padding: 0.8rem;
+      }
+    }
+  }
+  .box_container {
+    @include grid(17rem);
+    margin-top: 2rem;
+    .box {
+      background-color: $light_bg;
+      text-align: center;
+      padding: 3rem 0rem;
+      transition: $transition;
+      &:hover {
+        background-color: $black_color;
+        h3,
+        p {
+          color: $yellow_color;
+        }
+      }
+      h3 {
+        @include titleText(2rem);
+      }
+      p {
+        @include smallTxt(0.9rem);
+        padding-top: 0.3rem;
+      }
+    }
+  }
+}

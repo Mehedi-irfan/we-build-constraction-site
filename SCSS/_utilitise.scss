@@ -34,7 +34,7 @@ html {
   margin-top: 0.6rem;
   background-color: $black_color;
   color: $white_color;
-  padding: 1rem 3rem;
+  padding: 0.8rem 3rem;
   border-radius: 5px;
   cursor: pointer;
   font : {
@@ -102,4 +102,10 @@ html {
 }
 section {
   padding: 2.5rem 4rem;
+}
+.section_title {
+  @include titleText(2.5rem);
+  padding-left: 0.9rem;
+  border-left: 0.5rem solid $yellow_color;
+  margin-bottom: 2rem;
 }

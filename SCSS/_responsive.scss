@@ -27,11 +27,19 @@
       }
     }
   }
+  .about {
+    .row {
+      flex-direction: column;
+    }
+  }
 }
 
 @media only screen and (min-width: 200px) and (max-width: 799px) {
   section {
-    padding: 1.5rem 2rem;
+    padding: 1.5rem 1rem;
+  }
+  .section_title {
+    font-size: 1.5rem;
   }
   // Main Header section
   #Main_header {
@@ -101,6 +109,16 @@
         text-align: center;
         h3 {
           font-size: 1.8rem;
+        }
+      }
+    }
+  }
+  .about {
+    .row {
+      flex-direction: column;
+      .content {
+        h3 {
+          @include titleText(1.5rem);
         }
       }
     }
