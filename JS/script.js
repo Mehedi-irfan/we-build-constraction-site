@@ -99,3 +99,29 @@ var swiper = new Swiper(".blog_slider", {
     },
   },
 });
+
+// clients logo slider
+var swiper = new Swiper(".logo_slider", {
+  loop: true,
+  grabCursor: true,
+  slidesPerView: 5,
+  spaceBetween: 30,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  breakpoints: {
+    300: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 3,
+    },
+    991: {
+      slidersPerView: 4,
+    },
+    1100: {
+      slidersPerView: 5,
+    },
+  },
+});

@@ -23,6 +23,7 @@
       background-color: $white_color;
       padding: 1.5rem;
       padding-top: 2.5rem;
+      box-shadow: 0 0 0.9rem rgba(0, 0, 0, 0.2);
       h3 {
         @include titleText(1.5rem);
       }

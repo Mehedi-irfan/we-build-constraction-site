@@ -1,0 +1,18 @@
+.footer {
+  background-color: $light_bg;
+  text-align: center;
+  .links {
+    .btn {
+      font-size: 1rem;
+      padding: 0.9rem 2rem;
+      margin: 0.5rem;
+    }
+  }
+  .creadit {
+    margin-top: 1rem;
+    @include titleText(1.1rem);
+    span {
+      color: $yellow_color;
+    }
+  }
+}
