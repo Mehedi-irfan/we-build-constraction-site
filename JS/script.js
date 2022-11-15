@@ -50,8 +50,33 @@ var swiper = new Swiper(".home-slider", {
     disableOnInteraction: false,
   },
 });
-
+// reviews slider
 var swiper = new Swiper(".reviews_slider", {
+  loop: true,
+  slidesPerView: 3,
+  spaceBetween: 30,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  breakpoints: {
+    300: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    991: {
+      slidersPerView: 3,
+    },
+    1100: {
+      slidersPerView: 3,
+    },
+  },
+});
+// blog slider
+
+var swiper = new Swiper(".blog_slider", {
   loop: true,
   slidesPerView: 3,
   spaceBetween: 30,

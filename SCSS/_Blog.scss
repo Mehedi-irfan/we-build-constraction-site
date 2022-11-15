@@ -1,0 +1,40 @@
+.blog {
+  background-color: $light_bg;
+  .slider {
+    // width: 25rem;
+    text-align: center;
+    &:hover .image img {
+      transform: scale(1.1);
+    }
+    .image {
+      height: 20rem;
+      width: 90%;
+      overflow: hidden;
+      margin: 0 auto;
+      margin-bottom: -1.5rem;
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        transition: $transition;
+      }
+    }
+    .content {
+      background-color: $white_color;
+      padding: 1.5rem;
+      padding-top: 2.5rem;
+      h3 {
+        @include titleText(1.5rem);
+      }
+      p {
+        @include smallTxt(0.9rem);
+        padding: 0.5rem 0;
+      }
+      .btn {
+        border-radius: none;
+        padding: 0.8rem 2rem;
+        font-size: 0.9rem;
+      }
+    }
+  }
+}

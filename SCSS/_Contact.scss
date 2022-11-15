@@ -1,0 +1,54 @@
+.contact {
+  background-color: $black_color;
+  .section_title {
+    color: $white_color;
+  }
+  .row {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    .map {
+      flex-basis: 50%;
+      height: 30rem;
+      width: 100%;
+      border: none;
+    }
+    form {
+      flex-basis: 50%;
+      background-color: $white_color;
+      padding: 1.5rem 2rem;
+      h3 {
+        @include titleText(2rem);
+        padding-bottom: 1rem;
+        span {
+          color: $yellow_color;
+        }
+      }
+      .box {
+        margin: 0.7rem 0;
+        width: 100%;
+        display: inline-block;
+        padding: 0.5rem 0.5rem;
+        border: none;
+        border-bottom: $border;
+        font-size: 1rem;
+        border-color: $yellow_color;
+        color: $light_color;
+        &:focus,
+        &:active {
+          border-bottom: 0.1rem solid $yellow_color;
+        }
+      }
+      textarea {
+        height: 6rem;
+        resize: none;
+      }
+      .btn {
+        margin-top: 2rem;
+        font-size: 1rem;
+        border: none;
+        color: $white_color;
+      }
+    }
+  }
+}
