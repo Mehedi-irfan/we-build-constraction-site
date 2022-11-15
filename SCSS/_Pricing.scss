@@ -1,0 +1,54 @@
+.pricing {
+  background-color: $light_bg;
+
+  .box_container {
+    @include grid(20rem);
+    .box {
+      background-color: $white_color;
+      text-align: center;
+      border: $border;
+      padding: 1.5rem;
+      box-shadow: $box_shadow;
+      transition: $transition;
+      &:hover {
+        box-shadow: none;
+        border: 0.1rem solid $yellow_color;
+        i {
+          transform: translateY(-0.5rem);
+        }
+      }
+      i {
+        font-size: 1.5rem;
+        height: 4rem;
+        width: 4rem;
+        line-height: 4rem;
+        background-color: $yellow_color;
+        margin-bottom: 0.8rem;
+        color: $white_color;
+        border-radius: 50%;
+        transition: $transition;
+      }
+      h3 {
+        @include titleText(1.4rem);
+        margin-bottom: 0.3rem;
+      }
+      .price {
+        @include titleText(2rem);
+        span {
+          @include smallTxt(1.2rem);
+        }
+      }
+      .list {
+        padding: 0.9rem 0;
+        p {
+          padding: 0.6rem 0;
+          @include smallTxt(1rem);
+          text-transform: capitalize;
+        }
+        .btn {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}

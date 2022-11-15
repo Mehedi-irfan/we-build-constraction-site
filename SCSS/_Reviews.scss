@@ -9,12 +9,13 @@
       &::before {
         content: "";
         position: absolute;
-        bottom: -0.6rem;
+        bottom: -0.8rem;
         left: 2rem;
         width: 1.5rem;
         height: 1.5rem;
         background-color: $light_bg;
         transform: rotate(45deg);
+        border-bottom: 0.2rem solid $yellow_color;
       }
     }
     .user {
