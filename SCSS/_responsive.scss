@@ -39,17 +39,21 @@
   section {
     padding: 1.5rem 1rem;
   }
+
   .section_title {
     font-size: 1.5rem;
   }
   // Main Header section
   #Main_header {
-    padding: 1rem 2rem;
+    padding: 0.8rem 1rem;
     .logo {
-      @include titleText(1.2rem);
+      @include titleText(1.5rem);
     }
     .icons div {
-      font-size: 1rem;
+      font-size: 0.9rem;
+      height: 2rem;
+      width: 2rem;
+      line-height: 2rem;
     }
     .navbar {
       position: absolute;
