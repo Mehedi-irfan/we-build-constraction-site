@@ -1,0 +1,49 @@
+.projects {
+  background-color: $black_color;
+  .section_title {
+    color: $white_color;
+  }
+  .box_container {
+    @include grid(20rem);
+    .box {
+      cursor: initial;
+      &:hover .image img {
+        transform: scale(1.1);
+      }
+      .image {
+        height: 30rem;
+        overflow: hidden;
+        img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+          transition: $transition;
+        }
+      }
+      .content {
+        display: flex;
+        justify-content: space-between;
+        gap: 0.5rem;
+        background-color: $white_color;
+        .info {
+          padding: 0.7rem;
+          h3 {
+            @include titleText(1.3rem);
+          }
+          p {
+            @include smallTxt(1.1rem);
+          }
+        }
+        i {
+          width: 4rem;
+          background-color: $yellow_color;
+          font-size: 2rem;
+          text-align: center;
+          line-height: 5rem;
+          color: $white_color;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

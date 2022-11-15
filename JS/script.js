@@ -45,4 +45,32 @@ var swiper = new Swiper(".home-slider", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+});
+
+var swiper = new Swiper(".reviews_slider", {
+  loop: true,
+  slidesPerView: 3,
+  spaceBetween: 30,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  breakpoints: {
+    300: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    991: {
+      slidersPerView: 3,
+    },
+    1100: {
+      slidersPerView: 3,
+    },
+  },
 });

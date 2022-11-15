@@ -1,0 +1,41 @@
+.reviews {
+  .slider {
+    P {
+      @include smallTxt(1.1rem);
+      background-color: $light_bg;
+      padding: 0.9rem;
+      margin-bottom: 1.8rem;
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: -0.6rem;
+        left: 2rem;
+        width: 1.5rem;
+        height: 1.5rem;
+        background-color: $light_bg;
+        transform: rotate(45deg);
+      }
+    }
+    .user {
+      display: flex;
+      align-items: center;
+      gap: 1.2rem;
+      img {
+        width: 6rem;
+        height: 6rem;
+        border-radius: 50%;
+      }
+      h3 {
+        @include titleText(1.4rem);
+      }
+      .stars {
+        padding-top: 0.3rem;
+        i {
+          color: $yellow_color;
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+}
