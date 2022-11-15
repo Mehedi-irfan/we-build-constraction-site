@@ -23,3 +23,7 @@ ul li {
 a {
   text-decoration: none;
 }
+::selection {
+  background-color: #f5bf23;
+  color: #fff;
+}
